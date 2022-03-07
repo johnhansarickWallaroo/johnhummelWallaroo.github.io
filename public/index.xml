@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wallaroo Test Site – Wallaroo Test Site</title>
+    <link>http://johnhummelwallaroo.github.io/</link>
+    <description>Recent content on Wallaroo Test Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	  <atom:link href="http://johnhummelwallaroo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+      
+    
+    
+  </channel>
+</rss>

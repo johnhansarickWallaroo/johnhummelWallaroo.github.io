@@ -1,0 +1,103 @@
+baseURL = 'http://johnhummelwallaroo.github.io'
+languageCode = 'en-us'
+title = 'Wallaroo Beta Documentation Site'
+contentDir = "content/en"
+defaultContentLanguageInSubdir = false
+
+publishDir = "public"
+enableRobotsTXT = true
+
+theme = "docsy"
+
+## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+  [markup.asciidocExt]
+    backend = 'html5'
+    extensions = []
+    failureLevel = 'fatal'
+    noHeaderOrFooter = true
+    preserveTOC = false
+    safeMode = 'unsafe'
+    sectionNumbers = false
+    trace = false
+    verbose = false
+    workingFolderCurrent = false
+    [markup.asciidocExt.attributes]
+  [markup.blackFriday]
+    angledQuotes = false
+    footnoteAnchorPrefix = ''
+    footnoteReturnLinkContents = ''
+    fractions = true
+    hrefTargetBlank = false
+    latexDashes = true
+    nofollowLinks = false
+    noreferrerLinks = false
+    plainIDAnchors = true
+    skipHTML = false
+    smartDashes = true
+    smartypants = true
+    smartypantsQuotesNBSP = false
+    taskLists = true
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+      [markup.goldmark.parser.attribute]
+        block = false
+        title = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = false
+      xhtml = false
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = 'monokai'
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
+
+# Image processing configuration.
+[imaging]
+resampleFilter = "CatmullRom"
+quality = 75
+anchor = "smart"
+
+[languages]
+    [languages.en]
+    title = "Wallaroo Test Site"
+    description = "Wallaroo Test Site"
+    languageName = "English"
+    # Weight used for sorting.
+    weight = 1
+    time_format_default = "2006.01.02"
+    time_format_blog = "2006.01.02"
+
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params.taxonomy]
+taxonomyCloud = ["tags", "categories"] # set taxonomyCloud = [] to hide taxonomy clouds
+# taxonomyCloudTitle = ["Tag Cloud", "Cloud of Categories"] # if used, must have same lang as taxonomyCloud
+# taxonomyPageHeader = ["tags", "categories"] # set taxonomyPageHeader = [] to hide taxonomies on the page headers
+
